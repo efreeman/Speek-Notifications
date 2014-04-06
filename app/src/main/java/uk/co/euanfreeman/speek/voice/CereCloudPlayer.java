@@ -22,6 +22,8 @@ import java.net.URLConnection;
 /**
  * This class makes requests to the CereProc Cloud service to
  * synthesis speech and then plays the synthesised message.
+ * 
+ * @author Euan Freeman
  */
 public class CereCloudPlayer {
     private static final String TAG = "CereCloudPlayer";
@@ -153,6 +155,9 @@ public class CereCloudPlayer {
         }
     }
 
+    /**
+     * Background task which streams the synthesised speech file.
+     */
     private class PlayTask extends AsyncTask<String, Void, Integer> {
         @Override
         protected Integer doInBackground(String... params) {
