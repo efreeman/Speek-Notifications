@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Notifications" >
+        <CheckBoxPreference
+            android:key="pref_key_messages"
+            android:title="Messages"
+            android:summaryOn="Speek will tell you about new messages."
+            android:summaryOff="Speek will not tell you about new messages."
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="pref_key_calls"
+            android:title="Missed Calls"
+            android:summaryOn="Speek will tell you about missed calls."
+            android:summaryOff="Speek will not tell you about missed calls."
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="pref_key_emails"
+            android:title="Emails"
+            android:summaryOn="Speek will tell you about new emails."
+            android:summaryOff="Speek will not tell you about new emails."
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Voice" >
+        <CheckBoxPreference
+            android:key="pref_key_male"
+            android:title="Male Voice"
+            android:summaryOn="Speek will use a male voice."
+            android:summaryOff="Speek will use a female voice."
+            android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>
